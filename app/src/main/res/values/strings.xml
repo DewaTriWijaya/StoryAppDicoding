@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">StoryApp</string>
+
+    <string name="desc_welcome">How was your experience studying at Dicoding?</string>
+    <string name="desc_welcome2">Please write stories or experiences on StoryApp after learning on Dicoding Sites!</string>
+
+    <string name="login">Login</string>
+    <string name="yes">Yeah!</string>
+    <string name="no">Hmmm!</string>
+    <string name="success_login">You have successfully logged in. Can \'t wait to share your experience in coding!</string>
+    <string name="wrong_login">You failed to log in. Try logging in again!</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="success_signup">Account is ready. Come on, login and tell us about your experience in coding.</string>
+    <string name="wrong_signup">You failed to create an account. Please check again!</string>
+
+    <string name="fill_first">Fill First</string>
+    <string name="next">Next</string>
+    <string name="oke">OK</string>
+
+    <string name="tv_name">Name</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="name_max4">Name must be more than 4</string>
+
+    <string name="tv_email">Email</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="wrong_email">Email does not match</string>
+
+    <string name="tv_password">Password</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="wrong_password">Password must be more than 6</string>
+
+    <string name="det_img_welcome">Image Welcome</string>
+    <string name="det_name">Dewa Tri Wijaya</string>
+    <string name="det_desc">What is a description? According to the Big Indonesian Dictionary (KBBI) description is a description or description in words clearly and in detail. Description is also defined as a description. Description comes from the Latin describe which means to describe or give something.</string>
+    <string name="created">2 Sep 2022 | 16:00</string>
+    <string name="not_name">No name</string>
+    <string name="not_publish">No publish</string>
+    <string name="not_description">No description</string>
+
+    <string name="add_img">add_img</string>
+    <string name="add_camera">Camera</string>
+    <string name="add_gallery">Gallery</string>
+    <string name="add_upload">Upload</string>
+    <string name="enter_your_desc">Enter Your description</string>
+    <string name="not_permission">Didn\'t get permission.</string>
+    <string name="choose_picture">Choose a Picture</string>
+    <string name="enter_image">Please enter the image file first.</string>
+
+    <string name="logout">Logout</string>
+    <string name="show_logout">Do you want to go out?</string>
+    <string name="not_logout">Cancel</string>
+
+    <string name="failed_getImage">Failed to take pictures.</string>
+    <string name="failed_openCamera">Failed to bring up the camera.</string>
+
+    <string name="camera_capture">Camera capture</string>
+    <string name="camera_switch">Camera_switch</string>
+
+    <string name="floatingButton_add_story">FloatingButton Add Story</string>
+    <string name="img_welcome">Image Welcome</string>
+    <string name="img_card">Image Item Card</string>
+    <string name="img_profile">Image Profile</string>
+
+    <string name="menu_profile">Profile</string>
+    <string name="menu_language">Language</string>
+
+</resources>

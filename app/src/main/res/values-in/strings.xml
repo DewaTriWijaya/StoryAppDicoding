@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StoryApp</string>
+
+    <string name="desc_welcome">Bagaimana Pengalamanmu Belajar di Dicoding?</string>
+    <string name="desc_welcome2">Silahkan tulislah cerita atau pengalaman di StoryApp setelah belajar di Situs Dicoding!</string>
+
+    <string name="login">Login</string>
+    <string name="yes">Yeah!</string>
+    <string name="no">Hmmm!</string>
+    <string name="success_login">Anda berhasil masuk. Sudah tidak sabar untuk menceritakan pengalaman anda di dicoding!</string>
+    <string name="wrong_login">Anda gagal masuk. Coba kembali login lagi!</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="success_signup">Akunnya sudah jadi nih. Yuk, login dan kasih tau pengalaman anda di dicoding.</string>
+    <string name="wrong_signup">Anda gagal membuat akun. Coba cek lagi!</string>
+
+    <string name="fill_first">Isi dulu</string>
+    <string name="next">Lanjut</string>
+    <string name="oke">OKE</string>
+
+    <string name="tv_name">Nama</string>
+    <string name="enter_your_name">Masukkan nama Anda</string>
+    <string name="name_max4">Nama harus lebih dari 4</string>
+
+    <string name="tv_email">Email</string>
+    <string name="enter_your_email">Masukan email anda</string>
+    <string name="wrong_email">Email tidak sesuai</string>
+
+    <string name="tv_password">Password</string>
+    <string name="enter_your_password">Masukan password anda</string>
+    <string name="wrong_password">Password harus lebih dari 6</string>
+
+    <string name="det_img_welcome">Image Welcome</string>
+    <string name="det_name">Dewa Tri Wijaya</string>
+    <string name="det_desc">Apa yang dimaksud dengan deskripsi? Menurut Kamus Besar Bahasa Indonesia (KBBI) deskripsi merupakan pemaparan atau penggambaran dengan kata-kata secara jelas dan terperinci. Deskripsi juga diartikan sebagai uraian. Deskripsi berasal dari bahasa Latin describere yang artinya menggambarkan atau memberikan suatu hal.</string>
+    <string name="created">2 Sep 2022 | 16:00</string>
+    <string name="not_name">Tidak ada Nama</string>
+    <string name="not_publish">Tidak ada waktu terbit</string>
+    <string name="not_description">Tidak ada deskripsi</string>
+
+    <string name="add_img">add_img</string>
+    <string name="add_camera">Kamera</string>
+    <string name="add_gallery">Galeri</string>
+    <string name="add_upload">Kirim</string>
+    <string name="enter_your_desc">Masukan deskripsi</string>
+    <string name="not_permission">Tidak mendapatkan permission.</string>
+    <string name="choose_picture">Pilih Gambar</string>
+    <string name="enter_image">Silakan masukkan berkas gambar terlebih dahulu.</string>
+
+    <string name="logout">Logout</string>
+    <string name="show_logout">Apakah Anda ingin keluar?</string>
+    <string name="not_logout">Membatalkan</string>
+
+    <string name="failed_getImage">Gagal mengambil gambar.</string>
+    <string name="failed_openCamera">Gagal memunculkan kamera.</string>
+
+    <string name="camera_capture">Camera capture</string>
+    <string name="camera_switch">Camera switch</string>
+
+    <string name="floatingButton_add_story">FloatingButton Add Story</string>
+    <string name="img_welcome">Image Welcome</string>
+    <string name="img_card">Image Item Card</string>
+    <string name="img_profile">Image Profile</string>
+
+    <string name="menu_profile">Profile</string>
+    <string name="menu_language">Bahasa</string>
+
+</resources>
