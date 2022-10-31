@@ -13,14 +13,16 @@ import okhttp3.RequestBody
 
 class AddStoryViewModel(private val data: DataSource) : ViewModel() {
 
-    fun addNewStory(token: String, file: MultipartBody.Part, description: RequestBody): LiveData<ResultResponse<AddStoryResponse>> {
-        val result = MutableLiveData<ResultResponse<AddStoryResponse>>()
-        viewModelScope.launch {
-            data.addNewStory(token, file, description).collect {
-                result.postValue(it)
-            }
-        }
-        return result
-    }
+//    fun addNewStory(token: String, file: MultipartBody.Part, description: RequestBody): LiveData<ResultResponse<AddStoryResponse>> {
+//        val result = MutableLiveData<ResultResponse<AddStoryResponse>>()
+//        viewModelScope.launch {
+//            data.addNewStory(token, file, description).collect {
+//                result.postValue(it)
+//            }
+//        }
+//        return result
+//    }
+
+    fun getAddNewStory(token: String, file: MultipartBody.Part, description: RequestBody) = data.addNewStory(token, file, description)
 
 }

@@ -8,4 +8,8 @@
         android:id="@+id/language"
         android:title="@string/menu_language"/>
 
+    <item
+        android:id="@+id/maps"
+        android:title="Maps"/>
+
 </menu>

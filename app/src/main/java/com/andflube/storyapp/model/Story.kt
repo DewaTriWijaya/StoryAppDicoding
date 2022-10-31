@@ -19,5 +19,11 @@ data class Story(
     val photoUrl: String,
 
     @SerializedName("createdAt")
-    val createdAt: String
+    val createdAt: String,
+
+    @SerializedName("lat")
+    val lat: Double,
+
+    @SerializedName("lon")
+    val lon: Double
 ): Parcelable

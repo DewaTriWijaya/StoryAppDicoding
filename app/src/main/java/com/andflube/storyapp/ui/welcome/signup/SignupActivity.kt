@@ -69,7 +69,7 @@ class SignupActivity : AppCompatActivity() {
     }
 
     private fun registerUser(newUser: RegisterResponse) {
-        signupViewModel.registerUser(newUser).observe(this) { response ->
+        signupViewModel.getRegisterUser(newUser).observe(this) { response ->
             when (response) {
                 is ResultResponse.Loading -> {
                     binding.progressBar.visibility = View.VISIBLE

@@ -65,4 +65,9 @@
     <string name="menu_profile">Profile</string>
     <string name="menu_language">Language</string>
 
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="normal_type">Normal</string>
+    <string name="satellite_type">Satellite</string>
+    <string name="terrain_type">Terrain</string>
+    <string name="hybrid_type">Hybrid</string>
 </resources>

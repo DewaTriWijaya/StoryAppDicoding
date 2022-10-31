@@ -12,6 +12,9 @@
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
     <queries>
         <intent>
             <action android:name="android.intent.action.VIEW" />
@@ -31,6 +34,15 @@
         android:theme="@style/Theme.StoryApp"
         tools:targetApi="31">
 
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA2clWec5rtZwj1ufIsCP1ZV57KyN3kSNw" />
+
+        <activity
+            android:name=".ui.mapActivity.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
         <activity
             android:name=".ui.profile.ProfileActivity"
             android:exported="false" />
@@ -39,7 +51,10 @@
             android:exported="false" />
         <activity
             android:name=".ui.add.AddStoryActivity"
-            android:exported="false" />
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".ui.detail.DetailsActivity"
             android:exported="false" />
@@ -48,7 +63,10 @@
             android:exported="false" />
         <activity
             android:name="com.andflube.storyapp.ui.welcome.signup.SignupActivity"
-            android:exported="false" />
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name="com.andflube.storyapp.ui.welcome.login.LoginActivity"
             android:configChanges="orientation"
@@ -57,10 +75,16 @@
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".ui.welcome.WelcomeActivity"
-            android:exported="false" />
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".ui.FirstActivity"
-            android:exported="true">
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

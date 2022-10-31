@@ -1,6 +1,5 @@
 package com.andflube.storyapp.paging
 
-import android.content.Context
 import androidx.paging.ExperimentalPagingApi
 import androidx.paging.LoadType
 import androidx.paging.PagingState
@@ -18,7 +17,6 @@ class StoryRemoteMediator(
     private val preferences: UserPreference,
 ) : RemoteMediator<Int, StoryDB>() {
 
-    //private lateinit var preference: UserPreference
     private var token: String? = null
 
     private companion object {
@@ -54,13 +52,11 @@ class StoryRemoteMediator(
 
         try {
             token = preferences.token
+            val storyEntity = storyService.getAllStory("Bearer $token", page, state.config.pageSize)
 
-            //val pref = preferences.token
-            val responseData = storyService.getAllStory("Bearer $token", page, state.config.pageSize)
+            val responseDataList = storyEntity.listStory?.map { StoryDB(it) } ?: emptyList()
 
-            val storyEntitiesList = responseData.listStory?.map { StoryDB(it) } ?: emptyList()
-
-            val endOfPaginationReached = storyEntitiesList.isEmpty()
+            val endOfPaginationReached = responseDataList.isEmpty()
 
             storyDatabase.withTransaction {
                 if (loadType == LoadType.REFRESH) {
@@ -69,11 +65,11 @@ class StoryRemoteMediator(
                 }
                 val prevKey = if (page == 1) null else page - 1
                 val nextKey = if (endOfPaginationReached) null else page + 1
-                val keys = storyEntitiesList.map {
+                val keys = responseDataList.map {
                     RemoteKeys(id = it.id, prevKey = prevKey, nextKey = nextKey)
                 }
                 storyDatabase.remoteKeysDao().insertAll(keys)
-                storyDatabase.storyDao().insertStory(storyEntitiesList)
+                storyDatabase.storyDao().insertStory(responseDataList)
             }
             return MediatorResult.Success(endOfPaginationReached = endOfPaginationReached)
         } catch (exception: Exception) {

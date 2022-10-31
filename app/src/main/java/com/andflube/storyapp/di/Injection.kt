@@ -12,8 +12,6 @@ object Injection {
     fun provideRepository(context: Context): DataSource {
         val apiService = ApiRetrofit.getStoryService()
         val database = StoryDatabase.getInstance(context)
-        //val dao = database.storyDao()
-        //val remote = StoryRemoteMediator(database, apiService)
         val pref = UserPreference(context)
         return DataSource.getInstance(apiService, database, pref)
     }

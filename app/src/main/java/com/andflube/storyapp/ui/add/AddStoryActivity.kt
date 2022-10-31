@@ -175,7 +175,7 @@ class AddStoryActivity : AppCompatActivity() {
                 requestImageFile
             )
 
-            addStoryViewModel.addNewStory("Bearer $token", imageMultipart, desc).observe(this) { response ->
+            addStoryViewModel.getAddNewStory("Bearer $token", imageMultipart, desc).observe(this) { response ->
                 when(response) {
                     is ResultResponse.Loading -> {
                         binding.progressBar.visibility = View.VISIBLE
