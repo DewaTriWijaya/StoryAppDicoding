@@ -9,13 +9,15 @@ import kotlinx.coroutines.launch
 
 class LoginViewModel(private val data: DataSource) : ViewModel() {
 
-    fun loginUser(loginResponse: LoginResponse): LiveData<ResultResponse<LoginPostResponse>>{
-        val result = MutableLiveData<ResultResponse<LoginPostResponse>>()
-        viewModelScope.launch {
-            data.loginUser(loginResponse).collect{
-                result.postValue(it)
-            }
-        }
-        return result
-    }
+//    fun loginUser(loginResponse: LoginResponse): LiveData<ResultResponse<LoginPostResponse>>{
+//        val result = MutableLiveData<ResultResponse<LoginPostResponse>>()
+//        viewModelScope.launch {
+//            data.loginUser(loginResponse).collect{
+//                result.postValue(it)
+//            }
+//        }
+//        return result
+//    }
+
+    fun getLoginUser(loginResponse: LoginResponse) = data.loginUser(loginResponse)
 }

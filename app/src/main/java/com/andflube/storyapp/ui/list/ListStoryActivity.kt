@@ -6,19 +6,15 @@ import android.os.Bundle
 import android.provider.Settings
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
-import android.widget.Toast
-import androidx.activity.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.andflube.storyapp.R
 import com.andflube.storyapp.ViewModelFactory
 import com.andflube.storyapp.databinding.ActivityListStoryBinding
 import com.andflube.storyapp.model.UserPreference
-import com.andflube.storyapp.network.ResultResponse
 import com.andflube.storyapp.paging.LoadingStateAdapter
 import com.andflube.storyapp.ui.add.AddStoryActivity
+import com.andflube.storyapp.ui.mapActivity.MapsActivity
 import com.andflube.storyapp.ui.profile.ProfileActivity
 
 class ListStoryActivity : AppCompatActivity() {
@@ -40,8 +36,7 @@ class ListStoryActivity : AppCompatActivity() {
         setupViewModel()
         recyclerview()
         setupAction()
-        //getAllStories("Bearer $token")
-        getData()
+        getAllStory()
     }
 
     private fun setupViewModel() {
@@ -66,29 +61,8 @@ class ListStoryActivity : AppCompatActivity() {
         }
     }
 
-//    private fun getAllStories(token: String) {
-//        listViewModel.getAllStory(token).observe(this) { response ->
-//            when (response) {
-//                is ResultResponse.Loading -> binding.progressBar.visibility = View.VISIBLE
-//                is ResultResponse.Success -> {
-//                    binding.progressBar.visibility = View.GONE
-//                    val adapter = AdapterListStory(response.data)
-//                    binding.recyclerviewStory.adapter = adapter
-//                }
-//                is ResultResponse.Error -> {
-//                    binding.progressBar.visibility = View.GONE
-//                    Toast.makeText(this, "Error list data", Toast.LENGTH_SHORT).show()
-//                }
-//                else -> {
-//                    binding.progressBar.visibility = View.GONE
-//                    Toast.makeText(this, "Error State", Toast.LENGTH_SHORT).show()
-//                }
-//            }
-//        }
-//    }
-
-    private fun getData() {
-        val adapter = QuoteListAdapter()
+    private fun getAllStory() {
+        val adapter = AdapterListStory()
         binding.recyclerviewStory.adapter = adapter.withLoadStateFooter(
             footer = LoadingStateAdapter {
                 adapter.retry()
@@ -113,13 +87,16 @@ class ListStoryActivity : AppCompatActivity() {
             R.id.language -> {
                 startActivity(Intent(Settings.ACTION_LOCALE_SETTINGS))
             }
+            R.id.maps -> {
+                startActivity(Intent(this@ListStoryActivity, MapsActivity::class.java))
+            }
         }
         return super.onOptionsItemSelected(item)
     }
 
     override fun onResume() {
         super.onResume()
-        //getAllStories("Bearer $token")
+        getAllStory()
     }
 
 }

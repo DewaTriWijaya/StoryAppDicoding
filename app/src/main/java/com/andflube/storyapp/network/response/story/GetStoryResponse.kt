@@ -12,5 +12,5 @@ data class GetStoryResponse(
     val message: String,
 
     @SerializedName("listStory")
-    val listStory: List<Story>?
+    val listStory: List<Story>
 )

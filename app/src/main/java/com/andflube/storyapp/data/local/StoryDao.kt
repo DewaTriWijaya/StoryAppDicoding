@@ -7,9 +7,6 @@ import androidx.room.*
 @Dao
 interface StoryDao {
 
-    //@Query("SELECT * FROM story_information ORDER BY createdAt DESC")
-    //fun getAllStory(): LiveData<List<StoryDB>>
-
     @Query("SELECT * FROM story_information")
     fun getAllStory(): PagingSource<Int, StoryDB>
 

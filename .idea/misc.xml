@@ -19,17 +19,19 @@
         <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/activity_camera.xml" value="0.22" />
         <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/activity_details.xml" value="0.1767726161369193" />
         <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/activity_first.xml" value="0.33" />
-        <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/activity_list_story.xml" value="0.2" />
+        <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/activity_list_story.xml" value="0.14" />
         <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/activity_maps.xml" value="0.1" />
         <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/activity_profile.xml" value="0.22" />
         <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/activity_signup.xml" value="0.25" />
         <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/activity_welcome.xml" value="0.25" />
-        <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/item_card.xml" value="0.5" />
+        <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/item_card.xml" value="0.25" />
         <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/item_loading.xml" value="0.17" />
         <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/layout/story_widget.xml" value="0.15" />
+        <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/menu/map_options.xml" value="0.22" />
         <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/menu/menu.xml" value="0.2790328973444312" />
         <entry key="..\:/Users/DEWA/AndroidStudioProjects/StoryApp/app/src/main/res/xml/file_path.xml" value="0.12001811594202899" />
       </map>

@@ -97,7 +97,7 @@ class LoginActivity : AppCompatActivity() {
             ViewModelFactory.getInstance(this)
         )[LoginViewModel::class.java]
 
-        loginViewModel.loginUser(loginResponse).observe(this) {
+        loginViewModel.getLoginUser(loginResponse).observe(this) {
             when (it) {
                 is ResultResponse.Loading -> {
                     binding.progressBar.visibility = View.VISIBLE

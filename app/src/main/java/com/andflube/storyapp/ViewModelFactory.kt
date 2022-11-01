@@ -7,6 +7,7 @@ import com.andflube.storyapp.data.DataSource
 import com.andflube.storyapp.di.Injection
 import com.andflube.storyapp.ui.add.AddStoryViewModel
 import com.andflube.storyapp.ui.list.ListStoryViewModel
+import com.andflube.storyapp.ui.mapActivity.MapsViewModel
 import com.andflube.storyapp.ui.welcome.login.LoginViewModel
 import com.andflube.storyapp.ui.welcome.signup.SignupViewModel
 
@@ -26,6 +27,9 @@ class ViewModelFactory private constructor(private val pref: DataSource) : ViewM
             }
             modelClass.isAssignableFrom(AddStoryViewModel::class.java) -> {
                 AddStoryViewModel(pref) as T
+            }
+            modelClass.isAssignableFrom(MapsViewModel::class.java) -> {
+                MapsViewModel(pref) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
